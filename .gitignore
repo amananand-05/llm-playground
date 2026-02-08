@@ -1,0 +1,449 @@
+# ============================================================================
+# Production-Grade .gitignore for FastAPI Python Project
+# ============================================================================
+
+# ============================================================================
+# SECRETS AND SENSITIVE DATA (CRITICAL - NEVER COMMIT)
+# ============================================================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+.env.development
+*.key
+*.pem
+*.cert
+*.crt
+*.der
+*.pfx
+*.p12
+secrets/
+secret.yaml
+credentials.json
+service-account*.json
+**/secrets/
+**/*.secret
+**/*.secrets
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.c
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.hypothesis/
+.pytest_cache/
+cover/
+test-results/
+junit.xml
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff (if you add Django later)
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff (if you add Flask later)
+instance/
+.webassets-cache
+
+# Scrapy stuff (if you add Scrapy later)
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+docs/.doctrees/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# Poetry
+# poetry.lock  # Uncomment to ignore - but keep it committed for reproducible builds
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.venv/
+.venv
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ============================================================================
+# IDEs AND EDITORS
+# ============================================================================
+
+# PyCharm
+.idea/
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/*.iws
+.idea/httpRequests/
+.idea/codestream.xml
+
+# Keep these PyCharm files (run configurations, code style, project settings)
+# These files are committed to share IDE configuration with team
+!.idea/
+!.idea/inspectionProfiles/
+!.idea/*.iml
+!.idea/misc.xml
+!.idea/modules.xml
+!.idea/vcs.xml
+!.idea/runConfigurations/
+!.idea/.gitignore
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# JetBrains (general - this is overridden by specific PyCharm rules above)
+# .idea/
+*.iml
+*.ipr
+*.iws
+out/
+.idea_modules/
+
+# ============================================================================
+# OPERATING SYSTEMS
+# ============================================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+Icon
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================================================
+# DATABASES
+# ============================================================================
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-shm
+*.sqlite3-wal
+*.sql
+*.dump
+*.bak
+db.sql
+database.sql
+dump.sql
+
+# ============================================================================
+# LOGS AND TEMPORARY FILES
+# ============================================================================
+*.log
+*.log.*
+logs/
+log/
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+*.rej
+.~lock.*
+
+# ============================================================================
+# API KEYS AND TOKENS
+# ============================================================================
+*.api-key
+*.token
+api_keys.txt
+tokens.txt
+.api-keys/
+.tokens/
+
+# ============================================================================
+# FASTAPI / UVICORN SPECIFIC
+# ============================================================================
+uvicorn.log
+access.log
+error.log
+fastapi.log
+
+# ============================================================================
+# DEPLOYMENT AND DOCKER
+# ============================================================================
+docker-compose.override.yml
+.dockerignore
+*.tar
+*.tar.gz
+*.zip
+
+# Kubernetes
+*.kubeconfig
+kubeconfig
+k8s-secrets/
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+*.tfvars
+
+# AWS
+.aws/
+*.pem
+
+# ============================================================================
+# MONITORING AND PROFILING
+# ============================================================================
+*.prof
+*.lprof
+*.pstats
+.profiling/
+
+# ============================================================================
+# BACKUP FILES
+# ============================================================================
+*.backup
+*.bkp
+*~
+*.old
+
+# ============================================================================
+# PROJECT SPECIFIC
+# ============================================================================
+
+# Ignore test/scratch files
+hello.py
+scratch.py
+test_*.py
+*_test.py
+playground.py
+
+# Ignore local development files
+local/
+.local/
+
+# Ignore large data files
+data/
+datasets/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# Ignore model files (if you add ML models)
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pb
+*.pt
+*.pth
+*.onnx
+models/
+checkpoints/
+
+# Ignore generated documentation
+docs/_build/
+site/
+
+# ============================================================================
+# KEEP THESE FILES (negation patterns)
+# ============================================================================
+!.env.example
+!.gitkeep
+!README.md
+!pyproject.toml
+!poetry.lock  # Uncomment if you want to commit lock file
+
+# ============================================================================
+# END OF .gitignore
+# ============================================================================
