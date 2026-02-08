@@ -20,13 +20,12 @@ class Settings(BaseSettings):
     llm_api_key: str
     llm_base_url: str
     llm_model: str
-    
+
     # Optional Settings
     api_timeout: int = 60
-    
+
     # Optional: Provider name for logging/monitoring (not used in API calls)
     llm_provider: str = "generic"
 
 
 settings = Settings()
-

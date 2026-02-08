@@ -12,8 +12,8 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
 
 
 app = FastAPI(
-    title="Kimi FastAPI",
-    description="Production-grade FastAPI backend for Kimi K2.5 via Groq API - Lightning-fast inference with async/await",
+    title="LLM Playground",
+    description="Production-grade FastAPI backend for LLM API Exploration - Lightning-fast inference with async/await",
     version="0.1.0",
     lifespan=lifespan,
 )

@@ -1,15 +1,15 @@
 [tool.poetry]
-name = "kimi-fastapi"
+name = "llm-playground"
 version = "0.1.0"
-description = "Production-grade FastAPI backend for Kimi K2.5 via Groq API"
-authors = ["Your Name <you@example.com>"]
+description = "Production-grade FastAPI backend for llm apis exploration  via Groq API"
+authors = ["Aman Anand amananandji@gmail.com"]
 readme = "README.md"
-packages = [{include = "app"}]
+packages = [{ include = "app" }]
 
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = "^0.115.0"
-uvicorn = {extras = ["standard"], version = "^0.32.0"}
+uvicorn = { extras = ["standard"], version = "^0.32.0" }
 httpx = "^0.27.0"
 pydantic = "^2.9.0"
 pydantic-settings = "^2.6.0"

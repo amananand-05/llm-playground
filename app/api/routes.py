@@ -30,4 +30,3 @@ async def generate_response(request: PromptRequest) -> PromptResponse:
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Internal server error",
         ) from e
-
